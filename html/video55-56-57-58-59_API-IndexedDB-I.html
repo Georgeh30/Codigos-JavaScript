@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/video55-56-57-58-59_API-IndexedDB-I.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="form" class="form">
+        <label for="task">Task</label>
+        <input type="text" name="task">
+        <select name="priority">
+          <option value="low">Low</option>
+          <option value="normal">Normal</option>
+          <option value="high">High</option>
+        </select>
+
+        <!-- Atributo "data-action" con el parametro "add" para saber si
+        tenemos que añadir o actualizar -->
+        <button class="button" name="button" data-action="add">Add Task</button>
+      </form>
+      <div id="tasks" class="tasks"></div>
+    
+    <script src="../clases/video55-56-57-58-59_API-IndexedDB-I.js"></script>
+
+</body>
+</html>

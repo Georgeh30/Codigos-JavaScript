@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/video54_API'S-File+Drag&Drop.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    mediante el atributo "enctype" indicaremos la forma en la que viajará la información que se 
+    mande a través del formulario HTML.
+
+    "multipart/form-data" -> para cuando se envia datos multimedia (img,video, etc..) para que 
+                             lo pueda interpretar -->
+    <form class="form" method="post" enctype="multipart/form-data">
+        <div>
+            
+            <!-- con la clase "hide" que creamos en el css como un selector
+            para que oculete esta etiqueta -->
+            <input class="hide" type="file" name="file" id="file" multiple />
+    
+            <div id="drop-zone" class="drop-zone">
+                <i class="fas fa-file-upload"></i>
+                <p class="drop-zone__text">
+                Drop file or click to upload file
+                </p>
+            </div>
+            <input type="submit" id="upload-button" class="form__button" value="Upload">
+    </form>
+
+    <script src="../clases/video54_API'S-File+Drag&Drop.js"></script>
+
+</body>
+</html>

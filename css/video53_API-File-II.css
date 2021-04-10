@@ -1,0 +1,43 @@
+:root {
+    --bar-width: 0; /* creamos esta variable en root para que sea global */
+  }
+  
+  body {
+    margin: 0;
+    background-color: #ec407a;
+    font-family: sans-serif;
+    color: #fff;
+    user-select: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .load-bar {
+    width: 50%; /* ancho del contenedor para las barras de progreso */
+    background-color: #ccc;
+    height: 10px;
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  /* Este selector con el pseudo-elemento "::after" indica que aplicara los 
+  estilos al ultimo elemento hijo, para rellenar el contenedor  */
+  .load-bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: royalblue;
+    width: var(--bar-width); /* la mandamos a llamar para que modifique el ancho */
+    height: 10px;
+  }
+  
+  .progress {
+    display: block;
+    background-color: royalblue;
+    height: 10px;
+    width: 0; /* este controla el relleno de la barra de progreso */
+  }

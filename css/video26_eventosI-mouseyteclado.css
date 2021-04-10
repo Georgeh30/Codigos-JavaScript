@@ -1,0 +1,20 @@
+/* Para que las etiquetas html a y button salten de linea o para que esten e 
+bloques uno debajo de otro */
+a,
+button {
+  display: block;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
